@@ -18,6 +18,12 @@ export interface Resource {
   category: Category;
   tags: string[];
   featured: boolean;
+  /** Path relative to /public, e.g. "/logos/openai.svg" */
+  logoSrc?: string;
+  logoAlt?: string;
+  logoMode?: "contain" | "cover";
+  /** Invert logo in dark mode — useful for black monochrome SVGs */
+  invertLogoInDark?: boolean;
 }
 
 export interface CategoryInfo {

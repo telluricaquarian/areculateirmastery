@@ -13,6 +13,46 @@ export const categories: CategoryInfo[] = [
   { slug: "writing", label: "Writing", icon: "PenTool", href: "/writing" },
 ];
 
+// ---------------------------------------------------------------------------
+// TODO: Logo assets
+// Drop the following files into /public/logos/ to activate logos on cards.
+// Each file should be an SVG (preferred) or PNG with transparent background.
+// Cards fall back gracefully to letter placeholders if a file is missing.
+//
+//   /public/logos/openai.svg       — OpenAI (white/black wordmark or "O" mark)
+//   /public/logos/anthropic.svg    — Anthropic (monochrome wordmark)
+//   /public/logos/perplexity.svg   — Perplexity AI mark
+//   /public/logos/langchain.svg    — LangChain mark
+//   /public/logos/elevenlabs.svg   — ElevenLabs wordmark
+//   /public/logos/figma.svg        — Figma "F" mark
+//   /public/logos/framer.svg       — Framer "F" mark
+//   /public/logos/spline.svg       — Spline mark
+//   /public/logos/awwwards.svg     — Awwwards wordmark
+//   /public/logos/v0.svg           — v0 wordmark
+//   /public/logos/vercel.svg       — Vercel triangle mark
+//   /public/logos/github.svg       — GitHub Octocat / wordmark
+//   /public/logos/supabase.svg     — Supabase mark
+//   /public/logos/resend.svg       — Resend mark
+//   /public/logos/n8n.svg          — n8n wordmark
+//   /public/logos/zapier.svg       — Zapier wordmark
+//   /public/logos/make.svg         — Make wordmark
+//   /public/logos/notion.svg       — Notion mark
+//   /public/logos/linear.svg       — Linear mark
+//   /public/logos/airtable.svg     — Airtable mark
+//   /public/logos/readwise.svg     — Readwise mark
+//   /public/logos/scholar.svg      — Google Scholar mark
+//   /public/logos/arxiv.svg        — arXiv wordmark
+//   /public/logos/raycast.svg      — Raycast mark
+//   /public/logos/arc.svg          — Arc Browser mark
+//   /public/logos/warp.svg         — Warp mark
+//   /public/logos/descript.svg     — Descript mark
+//   /public/logos/runway.svg       — Runway mark
+//   /public/logos/loom.svg         — Loom mark
+//   /public/logos/obsidian.svg     — Obsidian mark
+//   /public/logos/typefully.svg    — Typefully mark
+//   /public/logos/grammarly.svg    — Grammarly mark
+// ---------------------------------------------------------------------------
+
 export const resources: Resource[] = [
   // AI
   {
@@ -24,6 +64,9 @@ export const resources: Resource[] = [
     category: "ai",
     tags: ["llm", "api", "research"],
     featured: true,
+    logoSrc: "/logos/openai.svg",
+    logoAlt: "OpenAI logo",
+    invertLogoInDark: false,
   },
   {
     id: "anthropic",
@@ -34,6 +77,9 @@ export const resources: Resource[] = [
     category: "ai",
     tags: ["llm", "safety", "research"],
     featured: true,
+    logoSrc: "/logos/anthropic.svg",
+    logoAlt: "Anthropic logo",
+    invertLogoInDark: false,
   },
   {
     id: "perplexity",
@@ -44,6 +90,8 @@ export const resources: Resource[] = [
     category: "ai",
     tags: ["search", "research", "answers"],
     featured: false,
+    logoSrc: "/logos/perplexity.svg",
+    logoAlt: "Perplexity logo",
   },
   {
     id: "langchain",
@@ -54,6 +102,8 @@ export const resources: Resource[] = [
     category: "ai",
     tags: ["framework", "llm", "agents"],
     featured: false,
+    logoSrc: "/logos/langchain.svg",
+    logoAlt: "LangChain logo",
   },
   {
     id: "elevenlabs",
@@ -64,6 +114,8 @@ export const resources: Resource[] = [
     category: "ai",
     tags: ["voice", "audio", "tts"],
     featured: false,
+    logoSrc: "/logos/elevenlabs.svg",
+    logoAlt: "ElevenLabs logo",
   },
   // Design
   {
@@ -75,6 +127,8 @@ export const resources: Resource[] = [
     category: "design",
     tags: ["ui", "collaboration", "prototyping"],
     featured: true,
+    logoSrc: "/logos/figma.svg",
+    logoAlt: "Figma logo",
   },
   {
     id: "framer",
@@ -85,6 +139,9 @@ export const resources: Resource[] = [
     category: "design",
     tags: ["website", "no-code", "animation"],
     featured: true,
+    logoSrc: "/logos/framer.svg",
+    logoAlt: "Framer logo",
+    invertLogoInDark: true,
   },
   {
     id: "spline",
@@ -95,6 +152,8 @@ export const resources: Resource[] = [
     category: "design",
     tags: ["3d", "webgl", "interactive"],
     featured: false,
+    logoSrc: "/logos/spline.svg",
+    logoAlt: "Spline logo",
   },
   {
     id: "awwwards",
@@ -105,6 +164,8 @@ export const resources: Resource[] = [
     category: "design",
     tags: ["inspiration", "awards", "showcase"],
     featured: false,
+    logoSrc: "/logos/awwwards.svg",
+    logoAlt: "Awwwards logo",
   },
   // Development
   {
@@ -116,6 +177,9 @@ export const resources: Resource[] = [
     category: "development",
     tags: ["ai", "ui", "code-generation"],
     featured: true,
+    logoSrc: "/logos/v0.svg",
+    logoAlt: "v0 logo",
+    invertLogoInDark: true,
   },
   {
     id: "vercel",
@@ -126,6 +190,9 @@ export const resources: Resource[] = [
     category: "development",
     tags: ["hosting", "deployment", "edge"],
     featured: true,
+    logoSrc: "/logos/vercel.svg",
+    logoAlt: "Vercel logo",
+    invertLogoInDark: true,
   },
   {
     id: "github",
@@ -136,6 +203,9 @@ export const resources: Resource[] = [
     category: "development",
     tags: ["git", "collaboration", "open-source"],
     featured: false,
+    logoSrc: "/logos/github.svg",
+    logoAlt: "GitHub logo",
+    invertLogoInDark: true,
   },
   {
     id: "supabase",
@@ -146,6 +216,8 @@ export const resources: Resource[] = [
     category: "development",
     tags: ["database", "auth", "backend"],
     featured: false,
+    logoSrc: "/logos/supabase.svg",
+    logoAlt: "Supabase logo",
   },
   {
     id: "resend",
@@ -156,6 +228,8 @@ export const resources: Resource[] = [
     category: "development",
     tags: ["email", "api", "transactional"],
     featured: false,
+    logoSrc: "/logos/resend.svg",
+    logoAlt: "Resend logo",
   },
   // Automation
   {
@@ -167,6 +241,8 @@ export const resources: Resource[] = [
     category: "automation",
     tags: ["workflow", "integration", "self-hosted"],
     featured: true,
+    logoSrc: "/logos/n8n.svg",
+    logoAlt: "n8n logo",
   },
   {
     id: "zapier",
@@ -177,6 +253,8 @@ export const resources: Resource[] = [
     category: "automation",
     tags: ["integration", "no-code", "workflow"],
     featured: false,
+    logoSrc: "/logos/zapier.svg",
+    logoAlt: "Zapier logo",
   },
   {
     id: "make",
@@ -187,6 +265,8 @@ export const resources: Resource[] = [
     category: "automation",
     tags: ["visual", "workflow", "integration"],
     featured: false,
+    logoSrc: "/logos/make.svg",
+    logoAlt: "Make logo",
   },
   // Systems
   {
@@ -198,6 +278,9 @@ export const resources: Resource[] = [
     category: "systems",
     tags: ["workspace", "docs", "collaboration"],
     featured: true,
+    logoSrc: "/logos/notion.svg",
+    logoAlt: "Notion logo",
+    invertLogoInDark: true,
   },
   {
     id: "linear",
@@ -208,6 +291,8 @@ export const resources: Resource[] = [
     category: "systems",
     tags: ["issue-tracking", "project", "team"],
     featured: true,
+    logoSrc: "/logos/linear.svg",
+    logoAlt: "Linear logo",
   },
   {
     id: "airtable",
@@ -218,6 +303,8 @@ export const resources: Resource[] = [
     category: "systems",
     tags: ["database", "spreadsheet", "apps"],
     featured: false,
+    logoSrc: "/logos/airtable.svg",
+    logoAlt: "Airtable logo",
   },
   // Research
   {
@@ -229,6 +316,8 @@ export const resources: Resource[] = [
     category: "research",
     tags: ["reading", "highlights", "knowledge"],
     featured: true,
+    logoSrc: "/logos/readwise.svg",
+    logoAlt: "Readwise logo",
   },
   {
     id: "scholar",
@@ -239,6 +328,8 @@ export const resources: Resource[] = [
     category: "research",
     tags: ["academic", "papers", "citations"],
     featured: false,
+    logoSrc: "/logos/scholar.svg",
+    logoAlt: "Google Scholar logo",
   },
   {
     id: "arxiv",
@@ -249,6 +340,8 @@ export const resources: Resource[] = [
     category: "research",
     tags: ["papers", "preprints", "academic"],
     featured: false,
+    logoSrc: "/logos/arxiv.svg",
+    logoAlt: "arXiv logo",
   },
   // Operators
   {
@@ -260,6 +353,8 @@ export const resources: Resource[] = [
     category: "operators",
     tags: ["launcher", "productivity", "mac"],
     featured: true,
+    logoSrc: "/logos/raycast.svg",
+    logoAlt: "Raycast logo",
   },
   {
     id: "arc",
@@ -270,6 +365,8 @@ export const resources: Resource[] = [
     category: "operators",
     tags: ["browser", "productivity", "workspace"],
     featured: false,
+    logoSrc: "/logos/arc.svg",
+    logoAlt: "Arc Browser logo",
   },
   {
     id: "warp",
@@ -280,6 +377,8 @@ export const resources: Resource[] = [
     category: "operators",
     tags: ["terminal", "ai", "productivity"],
     featured: false,
+    logoSrc: "/logos/warp.svg",
+    logoAlt: "Warp logo",
   },
   // Media
   {
@@ -291,6 +390,8 @@ export const resources: Resource[] = [
     category: "media",
     tags: ["video", "podcast", "editing"],
     featured: true,
+    logoSrc: "/logos/descript.svg",
+    logoAlt: "Descript logo",
   },
   {
     id: "runway",
@@ -301,6 +402,8 @@ export const resources: Resource[] = [
     category: "media",
     tags: ["ai", "video", "generative"],
     featured: true,
+    logoSrc: "/logos/runway.svg",
+    logoAlt: "Runway logo",
   },
   {
     id: "loom",
@@ -311,6 +414,8 @@ export const resources: Resource[] = [
     category: "media",
     tags: ["video", "async", "communication"],
     featured: false,
+    logoSrc: "/logos/loom.svg",
+    logoAlt: "Loom logo",
   },
   // Writing
   {
@@ -322,6 +427,8 @@ export const resources: Resource[] = [
     category: "writing",
     tags: ["markdown", "notes", "pkm"],
     featured: true,
+    logoSrc: "/logos/obsidian.svg",
+    logoAlt: "Obsidian logo",
   },
   {
     id: "typefully",
@@ -332,6 +439,8 @@ export const resources: Resource[] = [
     category: "writing",
     tags: ["twitter", "scheduling", "writing"],
     featured: false,
+    logoSrc: "/logos/typefully.svg",
+    logoAlt: "Typefully logo",
   },
   {
     id: "grammarly",
@@ -342,6 +451,8 @@ export const resources: Resource[] = [
     category: "writing",
     tags: ["grammar", "ai", "editing"],
     featured: false,
+    logoSrc: "/logos/grammarly.svg",
+    logoAlt: "Grammarly logo",
   },
 ];
 
