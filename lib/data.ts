@@ -51,6 +51,8 @@ export const categories: CategoryInfo[] = [
 //   /public/logos/obsidian.svg     — Obsidian mark
 //   /public/logos/typefully.svg    — Typefully mark
 //   /public/logos/grammarly.svg    — Grammarly mark
+//   /public/logos/malloy-studio.svg — Malloy Studio mark
+//   /public/logos/3d-logo-lab.svg  — 3D Logo Lab mark
 // ---------------------------------------------------------------------------
 
 export const resources: Resource[] = [
@@ -166,6 +168,18 @@ export const resources: Resource[] = [
     featured: false,
     logoSrc: "/logos/awwwards.svg",
     logoAlt: "Awwwards logo",
+  },
+  {
+    id: "3d-logo-lab",
+    title: "3D Logo Lab",
+    description: "Tool for turning 2D logos into polished 3D logo animations and export-ready branding visuals in seconds.",
+    href: "https://3dlogolab.io",
+    image: "/resources/3d-logo-lab.svg",
+    category: "design",
+    tags: ["3d", "logos", "branding", "animation", "identity"],
+    featured: false,
+    logoSrc: "/logos/3d-logo-lab.svg",
+    logoAlt: "3D Logo Lab logo",
   },
   // Development
   {
@@ -416,6 +430,18 @@ export const resources: Resource[] = [
     featured: false,
     logoSrc: "/logos/loom.svg",
     logoAlt: "Loom logo",
+  },
+  {
+    id: "malloy-studio",
+    title: "Malloy Studio",
+    description: "AI-powered motion graphics and overlay creation platform for generating ready-to-use visual assets, templates, and animated compositions.",
+    href: "https://portal.malloy.sg",
+    image: "/resources/malloy-studio.svg",
+    category: "media",
+    tags: ["motion", "overlays", "templates", "video", "creative-tools"],
+    featured: false,
+    logoSrc: "/logos/malloy-studio.svg",
+    logoAlt: "Malloy Studio logo",
   },
   // Writing
   {
