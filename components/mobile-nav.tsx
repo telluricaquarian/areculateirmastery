@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Compass, Brain, Palette, Code, Zap, Layers, Search, Terminal, Play, PenTool } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -30,9 +31,14 @@ export function MobileNav() {
       {/* Fixed Header */}
       <div className="fixed top-0 left-0 right-0 z-50 flex h-14 items-center justify-between border-b border-border bg-background px-4">
         <Link href="/" className="flex items-center" aria-label="Go to homepage">
-          <span className="text-xl font-semibold tracking-tighter text-foreground">
-            areculateir.<span className="italic text-primary">mastery</span>
-          </span>
+          <Image
+            src="/amlogo.svg"
+            alt="areculateir mastery"
+            width={140}
+            height={64}
+            className="h-8 w-auto object-contain"
+            priority
+          />
         </Link>
         <button
           onClick={() => setIsOpen(!isOpen)}

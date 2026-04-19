@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   Compass,
@@ -42,9 +43,14 @@ export function SidebarNav() {
         className="relative z-10 mx-2 my-1 flex h-14 items-center rounded-md px-4 transition-colors hover:bg-accent/50"
         aria-label="Go to homepage"
       >
-        <span className="text-xl font-semibold tracking-tighter text-foreground">
-          areculateir.<span className="italic text-primary">mastery</span>
-        </span>
+        <Image
+          src="/amlogo.svg"
+          alt="areculateir mastery"
+          width={140}
+          height={64}
+          className="h-8 w-auto object-contain"
+          priority
+        />
       </Link>
 
       {/* Navigation Links */}
