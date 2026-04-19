@@ -48,7 +48,7 @@ export function SidebarNav() {
           alt="areculateir mastery"
           width={140}
           height={64}
-          className="h-8 w-auto object-contain"
+          className="h-10 w-auto object-contain opacity-90 transition-opacity hover:opacity-100"
           priority
         />
       </Link>
