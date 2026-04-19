@@ -43,14 +43,20 @@ export function SidebarNav() {
         className="relative z-10 mx-2 my-1 flex h-14 items-center rounded-md px-4 transition-colors hover:bg-accent/50"
         aria-label="Go to homepage"
       >
-        <Image
-          src="/amlogo.svg"
-          alt="areculateir mastery"
-          width={140}
-          height={64}
-          className="h-10 w-auto object-contain opacity-90 transition-opacity hover:opacity-100"
-          priority
-        />
+        {/*
+          The SVG has ~35% top whitespace (transform offset y=52 inside a 150px viewBox).
+          Rendering at h-[110px] and clipping makes the ~30px content band fully visible.
+        */}
+        <div className="relative h-10 w-full overflow-hidden">
+          <Image
+            src="/amlogo.svg"
+            alt="areculateir mastery"
+            width={330}
+            height={150}
+            className="absolute h-[110px] w-auto top-1/2 -translate-y-1/2"
+            priority
+          />
+        </div>
       </Link>
 
       {/* Navigation Links */}
